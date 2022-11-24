@@ -1,0 +1,24 @@
+
+.clock{
+  font-size: 8em;
+  user-select: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: var(--green);
+  color: transparent;
+  text-shadow: 0 0 0.5em var(--green);
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+  animation: 4s shadow2 infinite ease-in-out;
+}
+
+@keyframes shadow2 {
+  0%,100%{
+    text-shadow: 0 0 1em var(--dgreen);
+  }
+  50%{
+    text-shadow: 0 0 0.5em var(--dgreen);
+  }    
+}
